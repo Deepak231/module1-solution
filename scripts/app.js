@@ -15,8 +15,9 @@
             var str = $scope.input_string;
             var words = str.split(',');
             for ( var i = 0; i < words.length ; i++ ) {
-                if ( words[i].length != 0 ) {
+                if ( words[i].trim().length != 0 ) {
                     count += 1;
+                    console.log(words[i].length);
                 }
             }
             if ( count == 0 ) {
